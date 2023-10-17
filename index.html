@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DaisyUI and  tailwind CDN -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7fdcff034b.js" crossorigin="anonymous"></script>
+    <!-- google Inria Serif & Anek Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Inria+Serif:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <title>My Editor</title>
+</head>
+
+<style>
+    .font-Inria {
+
+        font-family: 'Inria Serif', serif;
+    }
+
+    .font-Devanagari {
+        font-family: 'Anek Devanagari', sans-serif;
+    }
+</style>
+<!-- <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                backgroundImage: {
+                    "back_image": "url('./images/banner3.png')",
+                    "back_image2": "url('./images/banner1.png')",
+                },
+                backgroundColor: {
+                    "bg-colour": "#1A1A2E",
+                },
+            },
+        },
+    };
+</script> -->
+
+<body style="background-color: #1A1A2E;">
+
+
+    <main>
+        <div class=" w-10/12 mx-auto mb-12 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+
+            <div style="background-color: #829de798; box-shadow: 0px -5px 60px 0px #00000080;">
+
+                <h1 class=" pt-6 font-extrabold text-4xl text-center">My Custom Text Editor</h1>
+
+                <div class="shadow-md  rounded-xl py-8 flex justify-center items-center">
+                    <div class="w-9/12 border-2 border-black">
+                        <div class="flex items-center justify-evenly p-5">
+                            <div class="flex flex-row gap-3">
+                                <i class="cursor-pointer fa-solid fa-bold" id="bold"></i>
+                                <i class="cursor-pointer fa-solid fa-italic" id="italic"></i>
+                                <i class="cursor-pointer fa-solid fa-underline" id="underline"></i>
+                            </div>
+                            <div class="flex flex-row gap-3">
+                                <i class="cursor-pointer fa-solid fa-align-left" id="left"></i>
+                                <i class="cursor-pointer fa-solid fa-align-right" id="right"></i>
+                                <i class="cursor-pointer fa-solid fa-align-center" id="center"></i>
+                                <i class="cursor-pointer fa-solid fa-align-justify" id="justify"></i>
+                            </div>
+                            <div class="flex flex-row items-center gap-8">
+                                <input type="number" name="" id="font_size">
+                                <input type="color" value="#ff0000" id="text_color" />
+
+                            </div>
+                        </div>
+
+                        <div class="px-10">
+                            <hr class="my-4" style="display: block; width: 100%; border: 1px solid black;">
+                        </div>
+                        <div class="flex justify-center items-center px-12 pb-4">
+                            <textarea class="w-full rounded-lg" name="" id="textArea" cols="30" rows="10"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <script src="action.js"></script>
+
+</body>
+
+</html>
